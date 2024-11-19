@@ -1,0 +1,168 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background: #FFFFFF;
+  color: #000000;
+}
+
+main {
+  padding-top: 139px;
+}
+
+.header {
+  background: linear-gradient(to bottom, #000000 19%, #1D1D1D 60%, #838383 100%);
+}
+.header .logo__text,
+.header .nav__lang {
+  color: #FFFFFF;
+}
+
+.client__wrapper {
+  max-width: 1920px;
+  margin: 0 auto;
+  padding-left: 160px;
+  padding-right: 160px;
+}
+.client__title {
+  font-family: "Neue Machina";
+  line-height: 1.16;
+  font-weight: 800;
+  color: #000000;
+  text-transform: uppercase;
+  border-bottom: 9px solid #000000;
+  text-align: center;
+  margin-bottom: 50px;
+}
+.client__title_street, .client__title_meat, .client__title_surreality {
+  padding: 25px 0;
+}
+.client__title_4 {
+  font-size: 61px;
+  font-weight: 500;
+}
+.client__subtitle {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 50px;
+}
+.client__text {
+  font-size: 34px;
+  font-weight: 300;
+}
+.client__works {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  margin-bottom: 25px;
+}
+.client__work {
+  width: 100%;
+}
+.client__img {
+  width: 100%;
+  object-fit: cover;
+}
+
+.btn__wrapper {
+  display: flex;
+  justify-content: end;
+  margin-bottom: 125px;
+}
+
+.btnNextCase {
+  padding-right: 57px;
+  font-family: "Nexa", sans-serif;
+  font-weight: 300;
+  line-height: 1.16;
+  font-size: 34px;
+  color: #0E0D0D;
+  background: none;
+  border: none;
+  position: relative;
+}
+.btnNextCase::after {
+  content: url(../img/arrow_black.png);
+  display: inline-block;
+  transition: transform 0.3s ease;
+  position: absolute;
+  top: 0;
+  right: 10px;
+}
+
+.footer {
+  border-top: 6px solid #000000;
+}
+.footer .sitemap__link,
+.footer .socials__link {
+  color: #2D2D31;
+  font-weight: 500;
+}
+.footer .sitemap__link::after,
+.footer .socials__link::after {
+  background: #000000;
+}
+
+@media screen and (max-width: 1600px) {
+  .client__title_4 {
+    font-size: 34px;
+  }
+  .client__text {
+    font-size: 24px;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .client__wrapper {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+}
+@media screen and (max-width: 992px) {
+  .header .menu {
+    background-color: #FFFFFF;
+  }
+  .header .menu__link {
+    color: #0E0D0D;
+  }
+}
+@media screen and (max-width: 768px) {
+  .client__works {
+    gap: 20px;
+  }
+  .client__wrapper {
+    padding-left: 18px;
+    padding-right: 18px;
+  }
+  .client__title {
+    margin-bottom: 24px;
+  }
+  .client__subtitle {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+    margin-bottom: 24px;
+  }
+  .btn__wrapper {
+    margin-bottom: 85px;
+  }
+}
+@media screen and (max-width: 576px) {
+  .client__wrapper {
+    padding-left: 8px;
+    padding-right: 8px;
+  }
+  .client__title_4 {
+    font-size: 20px;
+  }
+  .client__title_street, .client__title_meat, .client__title_surreality {
+    padding: 16px 0;
+  }
+  .client__text {
+    font-size: 16px;
+  }
+  .btn__wrapper {
+    margin-bottom: 50px;
+  }
+}
