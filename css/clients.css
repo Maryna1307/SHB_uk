@@ -84,7 +84,7 @@ main {
   position: relative;
 }
 .btnNextCase::after {
-  content: url(../img/arrow_black.png);
+  content: url(../img/arrow_black.svg);
   display: inline-block;
   transition: transform 0.3s ease;
   position: absolute;
